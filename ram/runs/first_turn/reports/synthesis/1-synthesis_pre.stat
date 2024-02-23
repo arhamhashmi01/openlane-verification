@@ -1,0 +1,20 @@
+
+48. Printing statistics.
+
+=== dff_ram_8x72 ===
+
+   Number of wires:                321
+   Number of wire bits:           1317
+   Number of public wires:          15
+   Number of public wire bits:     869
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:               1240
+     $_ANDNOT_                       8
+     $_AND_                          6
+     $_DFFE_PP_                    720
+     $_MUX_                        504
+     $_NOR_                          1
+     $_OR_                           1
+

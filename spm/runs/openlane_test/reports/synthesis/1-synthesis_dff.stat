@@ -1,0 +1,20 @@
+
+53. Printing statistics.
+
+=== spm ===
+
+   Number of wires:                257
+   Number of wire bits:            288
+   Number of public wires:         132
+   Number of public wire bits:     163
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                253
+     $_ANDNOT_                      63
+     $_NAND_                        32
+     $_OR_                          31
+     $_XNOR_                        32
+     $_XOR_                         31
+     sky130_fd_sc_hd__dfrtp_2       64
+

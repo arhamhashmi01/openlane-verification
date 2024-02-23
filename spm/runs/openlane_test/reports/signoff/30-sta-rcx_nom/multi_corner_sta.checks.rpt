@@ -1,0 +1,212 @@
+
+===========================================================================
+report_checks -unconstrained
+===========================================================================
+======================= Fastest Corner ===================================
+
+Startpoint: _268_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _269_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+Corner: Fastest
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _268_/CLK (sky130_fd_sc_hd__dfrtp_1)
+     2    0.01    0.04    0.22    0.22 v _268_/Q (sky130_fd_sc_hd__dfrtp_1)
+                                         dsa[0].last_carry (net)
+                  0.04    0.00    0.22 v _186_/C (sky130_fd_sc_hd__and3_1)
+     1    0.00    0.03    0.11    0.33 v _186_/X (sky130_fd_sc_hd__and3_1)
+                                         _094_ (net)
+                  0.03    0.00    0.33 v _187_/A (sky130_fd_sc_hd__clkbuf_1)
+     2    0.01    0.03    0.07    0.40 v _187_/X (sky130_fd_sc_hd__clkbuf_1)
+                                         dsa[0].last_carry_next (net)
+                  0.03    0.00    0.40 v _189_/A (sky130_fd_sc_hd__nor2_1)
+     1    0.00    0.06    0.07    0.47 ^ _189_/Y (sky130_fd_sc_hd__nor2_1)
+                                         dsa[0].y_out_next (net)
+                  0.06    0.00    0.47 ^ _269_/D (sky130_fd_sc_hd__dfrtp_1)
+                                  0.47   data arrival time
+
+                  0.00   10.00   10.00   clock core_clock (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                                 10.00 ^ _269_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                         -0.04    9.96   library setup time
+                                  9.96   data required time
+-----------------------------------------------------------------------------
+                                  9.96   data required time
+                                 -0.47   data arrival time
+-----------------------------------------------------------------------------
+                                  9.49   slack (MET)
+
+
+
+======================= Slowest Corner ===================================
+
+Startpoint: _300_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _300_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+Corner: Slowest
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _300_/CLK (sky130_fd_sc_hd__dfrtp_1)
+     2    0.01    0.11    0.74    0.74 v _300_/Q (sky130_fd_sc_hd__dfrtp_1)
+                                         dsa[16].last_carry (net)
+                  0.11    0.00    0.74 v _256_/B1 (sky130_fd_sc_hd__a21o_1)
+     2    0.01    0.10    0.33    1.07 v _256_/X (sky130_fd_sc_hd__a21o_1)
+                                         _021_ (net)
+                  0.10    0.00    1.07 v _204_/A2 (sky130_fd_sc_hd__a21bo_1)
+     1    0.00    0.06    0.34    1.41 v _204_/X (sky130_fd_sc_hd__a21bo_1)
+                                         dsa[16].last_carry_next (net)
+                  0.06    0.00    1.41 v _300_/D (sky130_fd_sc_hd__dfrtp_1)
+                                  1.41   data arrival time
+
+                  0.00   10.00   10.00   clock core_clock (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                                 10.00 ^ _300_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                         -0.29    9.71   library setup time
+                                  9.71   data required time
+-----------------------------------------------------------------------------
+                                  9.71   data required time
+                                 -1.41   data arrival time
+-----------------------------------------------------------------------------
+                                  8.30   slack (MET)
+
+
+
+======================= Typical Corner ===================================
+
+Startpoint: _300_ (rising edge-triggered flip-flop clocked by core_clock)
+Endpoint: _300_ (rising edge-triggered flip-flop clocked by core_clock)
+Path Group: core_clock
+Path Type: max
+Corner: Typical
+
+Fanout     Cap    Slew   Delay    Time   Description
+-----------------------------------------------------------------------------
+                  0.00    0.00    0.00   clock core_clock (rise edge)
+                          0.00    0.00   clock network delay (ideal)
+                  0.00    0.00    0.00 ^ _300_/CLK (sky130_fd_sc_hd__dfrtp_1)
+     2    0.01    0.05    0.35    0.35 v _300_/Q (sky130_fd_sc_hd__dfrtp_1)
+                                         dsa[16].last_carry (net)
+                  0.05    0.00    0.36 v _256_/B1 (sky130_fd_sc_hd__a21o_1)
+     2    0.01    0.05    0.17    0.53 v _256_/X (sky130_fd_sc_hd__a21o_1)
+                                         _021_ (net)
+                  0.05    0.00    0.53 v _204_/A2 (sky130_fd_sc_hd__a21bo_1)
+     1    0.00    0.03    0.19    0.72 v _204_/X (sky130_fd_sc_hd__a21bo_1)
+                                         dsa[16].last_carry_next (net)
+                  0.03    0.00    0.72 v _300_/D (sky130_fd_sc_hd__dfrtp_1)
+                                  0.72   data arrival time
+
+                  0.00   10.00   10.00   clock core_clock (rise edge)
+                          0.00   10.00   clock network delay (ideal)
+                          0.00   10.00   clock reconvergence pessimism
+                                 10.00 ^ _300_/CLK (sky130_fd_sc_hd__dfrtp_1)
+                         -0.12    9.88   library setup time
+                                  9.88   data required time
+-----------------------------------------------------------------------------
+                                  9.88   data required time
+                                 -0.72   data arrival time
+-----------------------------------------------------------------------------
+                                  9.17   slack (MET)
+
+
+
+
+===========================================================================
+report_checks --slack_max -0.01
+============================================================================
+======================= Fastest Corner ===================================
+
+No paths found.
+
+======================= Slowest Corner ===================================
+
+No paths found.
+
+======================= Typical Corner ===================================
+
+No paths found.
+
+
+===========================================================================
+ report_check_types -max_slew -max_cap -max_fanout -violators
+============================================================================
+======================= Fastest Corner ===================================
+
+
+max slew violations count Fastest: 0
+max fanout violations count Fastest: 0
+max cap violations count Fastest: 0
+======================= Slowest Corner ===================================
+
+
+max slew violations count Slowest: 0
+max fanout violations count Slowest: 0
+max cap violations count Slowest: 0
+======================= Typical Corner ===================================
+
+
+max slew violations count Typical: 0
+max fanout violations count Typical: 0
+max cap violations count Typical: 0
+
+===========================================================================
+report_parasitic_annotation -report_unannotated
+============================================================================
+Found 0 unannotated drivers.
+Found 0 partially unannotated drivers.
+
+===========================================================================
+max slew violation count 0
+max fanout violation count 0
+max cap violation count 0
+============================================================================
+
+===========================================================================
+check_setup -verbose -unconstrained_endpoints -multiple_clock -no_clock -no_input_delay -loops -generated_clocks
+===========================================================================
+Warning: There are 34 input ports missing set_input_delay.
+  a[0]
+  a[10]
+  a[11]
+  a[12]
+  a[13]
+  a[14]
+  a[15]
+  a[16]
+  a[17]
+  a[18]
+  a[19]
+  a[1]
+  a[20]
+  a[21]
+  a[22]
+  a[23]
+  a[24]
+  a[25]
+  a[26]
+  a[27]
+  a[28]
+  a[29]
+  a[2]
+  a[30]
+  a[31]
+  a[3]
+  a[4]
+  a[5]
+  a[6]
+  a[7]
+  a[8]
+  a[9]
+  rst
+  x
+Warning: There is 1 unconstrained endpoint.
+  y

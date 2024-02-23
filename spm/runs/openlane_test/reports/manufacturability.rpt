@@ -1,0 +1,19 @@
+Design Name: spm
+Run Directory: /openlane/designs/spm/runs/openlane_test
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openlane/designs/spm/runs/openlane_test/reports/signoff/drc.rpt
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openlane/designs/spm/runs/openlane_test/logs/signoff/38-spm.lef.lvs.log
+Number of nets: 311                        |Number of nets: 311                        
+Design is LVS clean.
+----------------------------------------
+
+Antenna Summary:
+Source: /openlane/designs/spm/runs/openlane_test/logs/signoff/41-arc.log
+Pin violations: 0
+Net violations: 0
