@@ -1,6 +1,0 @@
-<< properties >>
-string FIXED_BBOX 0 0 36583 38727
-string GDS_END 3808474
-string GDS_FILE /openlane/designs/dff_ram/runs/first_turn/results/signoff/dff_ram_4x72.magic.gds
-string GDS_START 194282
-<< end >>
